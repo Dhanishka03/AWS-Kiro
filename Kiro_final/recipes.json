@@ -1,0 +1,110 @@
+[
+  {
+    "id": 1,
+    "name": "Spaghetti Aglio e Olio",
+    "category": "veg",
+    "time": 20,
+    "ingredients": ["spaghetti", "garlic", "olive oil", "parsley", "chili flakes", "salt"],
+    "steps": "1. Cook spaghetti until al dente.\n2. Sauté sliced garlic in olive oil until golden.\n3. Add chili flakes, then toss in drained pasta.\n4. Garnish with parsley and serve.",
+    "image": "https://images.unsplash.com/photo-1621996346565-e3dbc646d9a9?w=400&q=80"
+  },
+  {
+    "id": 2,
+    "name": "Veggie Omelette",
+    "category": "veg",
+    "time": 10,
+    "ingredients": ["eggs", "onion", "tomato", "bell pepper", "salt", "butter"],
+    "steps": "1. Beat eggs with salt.\n2. Sauté onion, tomato, and bell pepper in butter.\n3. Pour eggs over veggies and cook until set.\n4. Fold and serve hot.",
+    "image": "https://images.unsplash.com/photo-1510693206972-df098062cb71?w=400&q=80"
+  },
+  {
+    "id": 3,
+    "name": "Chicken Stir Fry",
+    "category": "non-veg",
+    "time": 25,
+    "ingredients": ["chicken", "soy sauce", "garlic", "ginger", "bell pepper", "onion", "oil"],
+    "steps": "1. Marinate chicken in soy sauce and ginger.\n2. Stir fry garlic and onion in hot oil.\n3. Add chicken and cook through.\n4. Toss in bell pepper and serve.",
+    "image": "https://images.unsplash.com/photo-1603133872878-684f208fb84b?w=400&q=80"
+  },
+  {
+    "id": 4,
+    "name": "Tomato Soup",
+    "category": "veg",
+    "time": 20,
+    "ingredients": ["tomato", "onion", "garlic", "butter", "cream", "salt", "pepper"],
+    "steps": "1. Sauté onion and garlic in butter.\n2. Add chopped tomatoes and cook until soft.\n3. Blend smooth, season with salt and pepper.\n4. Stir in cream and serve warm.",
+    "image": "https://images.unsplash.com/photo-1547592166-23ac45744acd?w=400&q=80"
+  },
+  {
+    "id": 5,
+    "name": "Egg Fried Rice",
+    "category": "veg",
+    "time": 15,
+    "ingredients": ["rice", "eggs", "soy sauce", "garlic", "onion", "oil", "salt"],
+    "steps": "1. Cook and cool rice beforehand.\n2. Scramble eggs in oil, set aside.\n3. Fry garlic and onion, add rice and soy sauce.\n4. Mix in eggs and serve hot.",
+    "image": "https://images.unsplash.com/photo-1603133872878-684f208fb84b?w=400&q=80"
+  },
+  {
+    "id": 6,
+    "name": "Avocado Toast",
+    "category": "veg",
+    "time": 5,
+    "ingredients": ["bread", "avocado", "lemon", "salt", "chili flakes", "olive oil"],
+    "steps": "1. Toast bread slices.\n2. Mash avocado with lemon juice and salt.\n3. Spread on toast.\n4. Top with chili flakes and a drizzle of olive oil.",
+    "image": "https://images.unsplash.com/photo-1541519227354-08fa5d50c820?w=400&q=80"
+  },
+  {
+    "id": 7,
+    "name": "Grilled Chicken Salad",
+    "category": "non-veg",
+    "time": 20,
+    "ingredients": ["chicken", "lettuce", "tomato", "cucumber", "olive oil", "lemon", "salt"],
+    "steps": "1. Season and grill chicken until cooked.\n2. Slice and place over lettuce, tomato, cucumber.\n3. Drizzle with olive oil and lemon juice.\n4. Season and serve.",
+    "image": "https://images.unsplash.com/photo-1512621776951-a57141f2eefd?w=400&q=80"
+  },
+  {
+    "id": 8,
+    "name": "Banana Pancakes",
+    "category": "veg",
+    "time": 15,
+    "ingredients": ["banana", "eggs", "flour", "milk", "butter", "salt"],
+    "steps": "1. Mash banana and mix with eggs, flour, and milk.\n2. Add a pinch of salt.\n3. Cook spoonfuls on a buttered pan until golden.\n4. Serve with honey or syrup.",
+    "image": "https://images.unsplash.com/photo-1567620905732-2d1ec7ab7445?w=400&q=80"
+  },
+  {
+    "id": 9,
+    "name": "Tuna Pasta",
+    "category": "non-veg",
+    "time": 20,
+    "ingredients": ["pasta", "tuna", "tomato", "garlic", "olive oil", "salt", "parsley"],
+    "steps": "1. Cook pasta until al dente.\n2. Sauté garlic in olive oil, add tomatoes.\n3. Stir in drained tuna and season.\n4. Toss with pasta and garnish with parsley.",
+    "image": "https://images.unsplash.com/photo-1621996346565-e3dbc646d9a9?w=400&q=80"
+  },
+  {
+    "id": 10,
+    "name": "Lentil Soup",
+    "category": "veg",
+    "time": 30,
+    "ingredients": ["lentils", "onion", "garlic", "tomato", "cumin", "olive oil", "salt"],
+    "steps": "1. Sauté onion and garlic in olive oil.\n2. Add lentils, tomato, cumin, and water.\n3. Simmer 25 minutes until lentils are soft.\n4. Season and serve with bread.",
+    "image": "https://images.unsplash.com/photo-1547592166-23ac45744acd?w=400&q=80"
+  },
+  {
+    "id": 11,
+    "name": "Beef Tacos",
+    "category": "non-veg",
+    "time": 25,
+    "ingredients": ["ground beef", "taco shells", "onion", "tomato", "lettuce", "cheese", "cumin", "salt"],
+    "steps": "1. Brown ground beef with onion and cumin.\n2. Season with salt.\n3. Fill taco shells with beef mixture.\n4. Top with tomato, lettuce, and cheese.",
+    "image": "https://images.unsplash.com/photo-1565299585323-38d6b0865b47?w=400&q=80"
+  },
+  {
+    "id": 12,
+    "name": "Caprese Salad",
+    "category": "veg",
+    "time": 5,
+    "ingredients": ["tomato", "mozzarella", "basil", "olive oil", "salt", "pepper"],
+    "steps": "1. Slice tomatoes and mozzarella.\n2. Alternate slices on a plate.\n3. Tuck basil leaves between slices.\n4. Drizzle with olive oil, season and serve.",
+    "image": "https://images.unsplash.com/photo-1512621776951-a57141f2eefd?w=400&q=80"
+  }
+]

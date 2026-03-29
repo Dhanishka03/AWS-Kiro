@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>SmartKitchen AI – Quick Meal Planner</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <!-- Header -->
+  <header class="header">
+    <div class="header-inner">
+      <div class="logo">
+        <span class="logo-icon">🍳</span>
+        <span class="logo-text">SmartKitchen <span class="accent">AI</span></span>
+      </div>
+      <nav class="nav">
+        <button class="nav-btn active" data-tab="planner">🥗 Recipes</button>
+        <button class="nav-btn" data-tab="weekly">📅 Meal Plan</button>
+        <button class="nav-btn" data-tab="favorites">❤️ Favorites</button>
+      </nav>
+      <button class="dark-toggle" id="darkToggle" title="Toggle dark mode">🌙</button>
+    </div>
+  </header>
+
+  <main class="main">
+
+    <!-- ===== RECIPES TAB ===== -->
+    <section id="tab-planner" class="tab active">
+
+      <!-- Ingredient Input -->
+      <div class="card ingredient-card">
+        <h2 class="section-title">What's in your kitchen?</h2>
+        <p class="section-sub">Enter ingredients you have and we'll find matching recipes.</p>
+        <div class="input-row">
+          <input type="text" id="ingredientInput" class="text-input" placeholder="e.g. eggs, tomato, garlic" />
+          <button class="btn btn-primary" id="addIngredientBtn">Add</button>
+        </div>
+        <div class="chips" id="ingredientChips"></div>
+        <div class="action-row">
+          <button class="btn btn-secondary" id="findRecipesBtn">🔍 Find Recipes</button>
+          <button class="btn btn-ghost" id="surpriseBtn">🎲 Surprise Me</button>
+          <button class="btn btn-ghost" id="clearIngredientsBtn">✕ Clear All</button>
+        </div>
+      </div>
+
+      <!-- Filters -->
+      <div class="filter-bar">
+        <span class="filter-label">Filter:</span>
+        <button class="filter-btn active" data-filter="all">All</button>
+        <button class="filter-btn" data-filter="veg">🥦 Veg</button>
+        <button class="filter-btn" data-filter="non-veg">🍗 Non-Veg</button>
+        <button class="filter-btn" data-filter="quick">⚡ Quick (&lt;15 min)</button>
+      </div>
+
+      <!-- Waste Indicator -->
+      <div class="waste-banner" id="wasteBanner" style="display:none">
+        <span class="waste-icon">♻️</span>
+        <span id="wasteText"></span>
+      </div>
+
+      <!-- Recipe Grid -->
+      <div class="recipe-grid" id="recipeGrid"></div>
+      <p class="empty-state" id="emptyState">Add ingredients above and click "Find Recipes" to get started.</p>
+    </section>
+
+    <!-- ===== WEEKLY PLANNER TAB ===== -->
+    <section id="tab-weekly" class="tab">
+      <div class="card">
+        <h2 class="section-title">📅 Weekly Meal Planner</h2>
+        <p class="section-sub">Assign recipes to each day of the week.</p>
+        <div class="week-grid" id="weekGrid"></div>
+        <button class="btn btn-ghost" id="clearPlannerBtn" style="margin-top:1rem">🗑 Clear Planner</button>
+      </div>
+    </section>
+
+    <!-- ===== FAVORITES TAB ===== -->
+    <section id="tab-favorites" class="tab">
+      <div class="card">
+        <h2 class="section-title">❤️ Favorite Recipes</h2>
+        <p class="section-sub">Your saved recipes, all in one place.</p>
+      </div>
+      <div class="recipe-grid" id="favGrid"></div>
+      <p class="empty-state" id="favEmpty" style="display:none">No favorites yet. Heart a recipe to save it here.</p>
+    </section>
+
+  </main>
+
+  <!-- Recipe Detail Modal -->
+  <div class="modal-overlay" id="modalOverlay">
+    <div class="modal" id="recipeModal">
+      <button class="modal-close" id="modalClose">✕</button>
+      <img class="modal-img" id="modalImg" src="" alt="" />
+      <div class="modal-body">
+        <div class="modal-meta" id="modalMeta"></div>
+        <h2 class="modal-title" id="modalTitle"></h2>
+        <h4>Ingredients</h4>
+        <ul class="modal-ingredients" id="modalIngredients"></ul>
+        <h4>Steps</h4>
+        <p class="modal-steps" id="modalSteps"></p>
+        <div class="modal-actions">
+          <button class="btn btn-primary" id="modalFavBtn">❤️ Save to Favorites</button>
+          <div class="planner-assign">
+            <select id="modalDaySelect" class="day-select">
+              <option value="">Add to meal plan...</option>
+              <option>Monday</option><option>Tuesday</option><option>Wednesday</option>
+              <option>Thursday</option><option>Friday</option><option>Saturday</option><option>Sunday</option>
+            </select>
+            <button class="btn btn-secondary" id="modalAddPlanBtn">Add</button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
